@@ -1,3 +1,4 @@
+//Two Pointers
 // C++ program to count all triplets having sum equal to
 // target by exploring all possible triplets
 
