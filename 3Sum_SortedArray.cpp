@@ -47,6 +47,7 @@ int countTriplets(vector<int> &arr, int target) {
                 // If both the elements are same, then count of
                 // pairs = the number of ways to choose 2
                 // elements among cnt1 elements
+                //(n*(n-1))/2
                 if (ele1 == ele2)
                     res += (cnt1 * (cnt1 - 1)) / 2;
 
