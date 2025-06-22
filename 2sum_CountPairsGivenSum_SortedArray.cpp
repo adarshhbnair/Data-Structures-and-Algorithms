@@ -12,13 +12,13 @@ int countPairs(vector<int> &arr, int target) {
     int left = 0, right = n - 1;
 
     while (left < right) {
-      
+        int currSum = arr[left] + arr[right];
         // If sum is greater 
-        if (arr[left] + arr[right] < target)
+        if (currSum < target)
             left++;
 
         // If sum is lesser
-        else if (arr[left] + arr[right] > target)
+        else if (currSum > target)
             right--;
 
         // If sum is equal
