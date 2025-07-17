@@ -23,3 +23,19 @@ bool hasCycle(Node *head){
     }
     return false;
 }
+
+int main(){
+    Node *head = new Node(3);
+    head->next = new Node (2);
+    head->next->next = new Node(0);
+    head->next->next->next = new Node(-4);
+    head->next->next->next->next = head->next;
+
+    if(hasCycle(head)){
+        cout<<"Cycle Detected!"<<endl;
+    }
+    else{
+        cout<<"No Cycle Detected!"<<endl;
+    }
+    return 0;
+}
