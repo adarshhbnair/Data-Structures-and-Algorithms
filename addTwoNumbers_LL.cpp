@@ -11,7 +11,7 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2){
     ListNode *curr = dummy;
     int carry = 0;
 
-    while(l1 != nullptr || l2 != nullptr){
+    while(l1 != nullptr || l2 != nullptr || carry>0){
         int sum = carry;
 
         if(l1 != nullptr){
